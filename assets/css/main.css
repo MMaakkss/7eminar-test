@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jost&family=Raleway:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "e-Ukraine Head";
+  src: url("../fonts/e-UkraineHead-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "e-Ukraine Head";
+  font-weight: bold;
+  src: url("../fonts/e-UkraineHead-Bold.otf") format("opentype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+:root {
+  --blue: #0066cc;
+  --yellow: #ffe601;
+  --black: #232323;
+  --grey: #fafafa;
+  --purple: #3333a7;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  background: var(--grey);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 17px;
+}
+
+h2 {
+  font-family: "e-Ukraine Head";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.filled {
+  background-color: #fff;
+}
+
+@media (max-width: 810px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 22px;
+  }
+}
